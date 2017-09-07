@@ -4,5 +4,34 @@
 
 .tableWrapper {
   max-height: 400px;
+  min-height: 400px;
   overflow: auto;
+}
+
+.title{
+	border: 5px solid #0021A4;
+	border-bottom-right-radius: 75px;
+	
+	
+	margin: 0px;
+	width : 550px;
+	
+	padding-left: 20px;
+	padding-bottom: 20px;
+	
+	color: #0021A4;
+	background: #FA4616;
+}
+
+.xbutton{
+	background-color: #f44336;
+	border-radius: 100%;
+	font-size: 16px;
+	color: white;
+}
+
+.addbutton{
+	background-color: #008CBA;
+	font-size: 16px;
+	border-radius: 10%;
 }

@@ -6,7 +6,7 @@
   </head>
   <body ng-app="directoryApp">
     <div class="container">
-      <div class="row">
+      <div class="title">
         <h1>UF Directory App</h1>
       </div>
       <div class="row" ng-controller="ListingsController">
@@ -38,7 +38,7 @@
 					<td>{{entries.code}}</td>
 					<td>{{entries.name}}</td>
 					<td>
-						<button type="button" ng-click="deleteListing(entries)">Remove</button>
+						<button class = "xbutton" type="button" ng-click="deleteListing(entries)">X</button>
 					</td>
 				</tr>
 				</table>
@@ -47,12 +47,8 @@
         <div class="col-md-6">
           <div class="jumbotron">
             <h2>Detailed Information</h2>
-            <!-- 
 
-              Include a way to display detailed information about an individual listing:
-                   * consider how to use ng-click within the the table to implement this feature
-
-             -->
+            
 			 <table>
 				<tr><td>Code:</td><td>{{detailedInfo.code}}</td></tr>
 				<tr><td>Name:</td><td>{{detailedInfo.name}}</td></tr>
@@ -61,7 +57,8 @@
 				<tr><td>Address:</td><td>{{detailedInfo.address}}</td></tr>
 			</table>
           </div>
-        </div><div class="col-md-6">
+        </div>
+		<div class="col-md-6">
           <div class="jumbotron">
             <h2>Add</h2>
             <!-- 
@@ -74,7 +71,7 @@
 			<input type="number" class="form-control" placeholder="Latitude" ng-model="newLat">
 			<input type="number" class="form-control" placeholder="longitude" ng-model="newLong">
 			<input type="text" class="form-control" placeholder="Address" ng-model="newAdd">
-			<button type="button" ng-click="addListing(newCode, newName, newLat, newLong, newAdd)">Add Listing</button>
+			<button class="addbutton" type="button" ng-click="addListing(newCode, newName, newLat, newLong, newAdd)">Add Listing</button>
           </div>
         </div>
       </div>
